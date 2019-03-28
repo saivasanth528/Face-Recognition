@@ -93,7 +93,7 @@ The key things one need to know are:
 FRmodel = faceRecoModel(input_shape=(3, 96, 96))
 #
 # print("Total Params:", FRmodel.count_params())
-
+from database import *
 '''
 By using a 128-neuron fully connected layer as its last layer, the model ensures that the output is an
 encoding vector of size 128. You then use the encodings the compare two face images as follows:
@@ -200,21 +200,12 @@ the model on the specified image.
  This database maps each person's name to a 128-dimensional encoding of their face.
 '''
 
-database = {}
-database["danielle"] = img_to_encoding("images/danielle.png", FRmodel)
-database["younes"] = img_to_encoding("images/younes.jpg", FRmodel)
-database["tian"] = img_to_encoding("images/tian.jpg", FRmodel)
-database["andrew"] = img_to_encoding("images/andrew.jpg", FRmodel)
-database["kian"] = img_to_encoding("images/kian.jpg", FRmodel)
-database["dan"] = img_to_encoding("images/dan.jpg", FRmodel)
-database["sebastiano"] = img_to_encoding("images/sebastiano.jpg", FRmodel)
-database["bertrand"] = img_to_encoding("images/bertrand.jpg", FRmodel)
-database["kevin"] = img_to_encoding("images/kevin.jpg", FRmodel)
-database["felix"] = img_to_encoding("images/felix.jpg", FRmodel)
-database["benoit"] = img_to_encoding("images/benoit.jpg", FRmodel)
-database["arnaud"] = img_to_encoding("images/arnaud.jpg", FRmodel)
-database["vasanth"] = img_to_encoding("images/vasanth_test1.jpg", FRmodel)
-
+database = load_to_dict()
+# database["vasanth"] = img_to_encoding("images/vasanth_test.jpg", FRmodel)
+# database['frame12'] = img_to_encoding("images/frame12.jpg", FRmodel)
+# # database["mb"] = img_to_encoding("images/mb_2_short.jpg", FRmodel)
+# database["frame21"] = img_to_encoding("images/frame21.jpg", FRmodel)
+# # database["dan"] = img_to_encoding("images/dan.jpg", FRmodel)
 '''
 Now, when someone shows up at your front door and swipes their ID card 
 (thus giving you their name), you can look up their encoding in the database,
@@ -297,7 +288,7 @@ Unlike the previous face verification system, we will no longer get a person's n
 '''
 
 
-def who_is_it(image_path, database, model):
+def who_is_it(image, database, model):
     """
     Implements face recognition for the happy house by finding who is the person on the image_path image.
     
@@ -312,7 +303,7 @@ def who_is_it(image_path, database, model):
     """
 
     # Step 1: Compute the target "encoding" for the image.
-    encoding = img_to_encoding(image_path, model)
+    encoding = img_to_encoding1(image, model)
     
     # Step 2: Find the closest encoding
     
@@ -333,13 +324,13 @@ def who_is_it(image_path, database, model):
     
     if min_dist > 0.7:
         print("Not in the database.")
+        return None, None
     else:
-        print ("it's " + str(identity) + ", the distance is " + str(min_dist))
-        
-    return min_dist, identity
+        print("it's " + str(identity) + ", the distance is " + str(min_dist))
+        return min_dist, identity
 
 
-# who_is_it("images/frame37.jpg", database, FRmodel)
+# who_is_it("images/frame19.jpg", database, FRmodel)
 
 
 '''
