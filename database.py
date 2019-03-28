@@ -8,6 +8,7 @@ conn.execute('''CREATE TABLE IF NOT EXISTS person (name TEXT(20) NOT NULL);''')
 
 
 def load_to_dict():
+    conn = sqlite3.connect('smart_database.db')
     database = {}
     data = conn.execute('''SELECT name FROM person''')
     data = data.fetchall()
@@ -46,7 +47,7 @@ def del_person(name):
 load_to_dict()
 
 
-database
+
 
 
 
