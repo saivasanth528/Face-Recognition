@@ -4,16 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/Face_Recognition.py" line="298" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63b38848-0dc7-4300-a9c0-1ec946d7be7e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/frame21.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Face+Recognition+for+the+Happy+House+-+v3-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Face+Recognition+for+the+Happy+House+-+v3.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Face_Recognition.py" beforeDir="false" afterPath="$PROJECT_DIR$/Face_Recognition.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fr_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/fr_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open_cv_part.py" beforeDir="false" afterPath="$PROJECT_DIR$/open_cv_part.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weights/Untitled.ipynb" beforeDir="false" />
-    </list>
+    <list default="true" id="63b38848-0dc7-4300-a9c0-1ec946d7be7e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +16,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Face_Recognition.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
+            <state relative-caret-position="1526">
               <caret line="95" column="22" selection-start-line="95" selection-start-column="22" selection-end-line="95" selection-end-column="22" />
               <folding>
                 <element signature="e#1778#1813#0" expanded="true" />
@@ -281,6 +272,14 @@
       <option name="presentableId" value="Default" />
       <updated>1552156629160</updated>
     </task>
+    <task id="LOCAL-00001" summary="database creation and modifications">
+      <created>1553742665785</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1553742665785</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -322,9 +321,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.49584025" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49920383" visible="true" weight="0.2046589" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.20133111" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.5007962" side_tool="true" visible="true" weight="0.2046589" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.38935107" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -359,6 +358,10 @@
         <option value="1" />
       </list>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="database creation and modifications" />
+    <option name="LAST_COMMIT_MESSAGE" value="database creation and modifications" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/images/mb_1.jpeg">
@@ -551,7 +554,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Face_Recognition.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
+        <state relative-caret-position="1526">
           <caret line="95" column="22" selection-start-line="95" selection-start-column="22" selection-end-line="95" selection-end-column="22" />
           <folding>
             <element signature="e#1778#1813#0" expanded="true" />
